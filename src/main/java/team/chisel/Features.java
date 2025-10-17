@@ -2216,9 +2216,9 @@ public enum Features {
                 .addVariation("tile.limestone.15.desc", 15, "limestone/terrain-pistonback-lightpanel");
             limestone.carverHelper.registerAll(limestone, "limestone");
             OreDictionary.registerOre("limestone", limestone);
-            OreDictionary.registerOre("oreLimestone", oreLimestone);
+            OreDictionary.registerOre("oreLimestone", new ItemStack(ModBlocks.ORE_LIMESTONE));
             Carving.chisel.registerOre("limestone", "limestone");
-            Carving.chisel.registerOre("oreLimestone", orelimestone);
+            Carving.chisel.registerOre("oreLimestone", new ItemStack(ModBlocks.ORE_LIMESTONE));
 
             BlockCarvableSlab limestone_slab = (BlockCarvableSlab) new BlockCarvableSlab(limestone)
                 .setCreativeTab(ChiselTabs.tabStoneChiselBlocks)
