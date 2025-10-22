@@ -862,6 +862,7 @@ public enum Features {
             concrete.carverHelper.addVariation("tile.concrete.10.desc", 10, "concrete/asphalt");
             concrete.carverHelper.registerAll(concrete, "concrete");
             OreDictionary.registerOre("concrete", concrete);
+            OreDictionary.registerOre("anyConcrete", new ItemStack(concrete, 1, OreDictionary.WILDCARD_VALUE));
             Carving.chisel.registerOre("concrete", "concrete");
         }
 
@@ -2216,6 +2217,7 @@ public enum Features {
                 .addVariation("tile.limestone.15.desc", 15, "limestone/terrain-pistonback-lightpanel");
             limestone.carverHelper.registerAll(limestone, "limestone");
             OreDictionary.registerOre("limestone", limestone);
+            OreDictionary.registerOre("oreLimestone", new ItemStack(limestone, 1, OreDictionary.WILDCARD_VALUE));
             Carving.chisel.registerOre("limestone", "limestone");
 
             BlockCarvableSlab limestone_slab = (BlockCarvableSlab) new BlockCarvableSlab(limestone)
