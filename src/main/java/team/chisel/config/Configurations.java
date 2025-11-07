@@ -83,7 +83,7 @@ public class Configurations {
             .get(
                 category,
                 "fullBlockConcrete",
-                false,
+                true,
                 "Should concrete be a full block. This will also unavoidably disable speed increase if set to true.")
             .getBoolean(false);
         ghostCloud = config.get(category, "doesCloudRenderLikeGhost", true)
