@@ -862,7 +862,6 @@ public enum Features {
             concrete.carverHelper.addVariation("tile.concrete.10.desc", 10, "concrete/asphalt");
             concrete.carverHelper.registerAll(concrete, "concrete");
             OreDictionary.registerOre("concrete", concrete);
-            OreDictionary.registerOre("anyConcrete", new ItemStack(concrete, 1, 0));
             Carving.chisel.registerOre("concrete", "concrete");
         }
 
